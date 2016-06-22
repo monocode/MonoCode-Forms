@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>fc8dc19a-0aba-4922-9719-2debb20397f6</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>XLabs.Platform.Shared</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Device\Accelerometer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Device\Battery.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Device\Gyroscope.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\IO\FileManager.cs" />
+  </ItemGroup>
+</Project>

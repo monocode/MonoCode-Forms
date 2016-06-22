@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<toolkit:BaseView x:Class="XLabs.Samples.Pages.Services.CacheServicePage"
+                  xmlns="http://xamarin.com/schemas/2014/forms"
+                  xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                  xmlns:toolkit="clr-namespace:XLabs.Forms.Mvvm;assembly=XLabs.Forms"
+                  Title="Cache Service">
+    <toolkit:BaseView.Content>
+        <StackLayout>
+            <Button Command="{Binding ClearCacheCommand}" Text="Clear cache" />
+            <Button Command="{Binding SaveItemsToCacheCacheCommand}" Text="Save Items cache" />
+            <Label Text="{Binding CacheInfo}" />
+            <ListView ItemsSource="{Binding Items}" />
+        </StackLayout>
+    </toolkit:BaseView.Content>
+</toolkit:BaseView>
+

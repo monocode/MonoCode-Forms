@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>531d5086-ca30-4e17-afe8-d339b312a57d</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>XLabs.Forms.Shared</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Controls\HybridWebViewRenderer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Controls\ImageButtonRenderer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\FontManager.cs" />
+  </ItemGroup>
+</Project>

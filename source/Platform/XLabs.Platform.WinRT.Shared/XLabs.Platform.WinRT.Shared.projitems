@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>a44c2d82-3337-4af1-85ca-4da8a7b885fc</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>XLabs.Platform.WinRT.Shared</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Device\Accelerometer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Device\Battery.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Device\Battery.old.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Device\BluetoothDevice.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Device\BluetoothHub.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Device\DeviceProperties.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Device\DeviceProperties1.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Device\Gyroscope.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Extensions\ColorExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Extensions\DeviceExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Extensions\VectorExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\FontService.cs" />
+  </ItemGroup>
+</Project>

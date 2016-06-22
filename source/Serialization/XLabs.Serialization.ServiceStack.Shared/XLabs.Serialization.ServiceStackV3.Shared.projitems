@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>70ea5fd6-61bf-4ddf-9cf3-fbe1012f575f</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>XLabs.Serialization.ServiceStack.Shared</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)AssemblyUtils.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)CollectionExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Common\DateTimeSerializer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Common\DeserializeArray.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Common\DeserializeBuiltin.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Common\DeserializeCollection.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Common\DeserializeDictionary.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Common\DeserializeDynamic.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Common\DeserializeKeyValuePair.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Common\DeserializeListWithElements.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Common\DeserializeSpecializedCollections.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Common\DeserializeTuple.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Common\DeserializeType.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Common\DeserializeTypeRef.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Common\DeserializeTypeRefJson.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Common\DeserializeTypeRefJsv.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Common\DeserializeTypeUtils.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Common\ITypeSerializer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Common\JsDelegates.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Common\JsReader.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Common\JsState.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Common\JsWriter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Common\ParseUtils.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Common\StaticParseMethod.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Common\WriteDictionary.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Common\WriteLists.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Common\WriteType.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Controller\CommandProcessor.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Controller\PathInfo.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)CsvAttribute.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)CsvConfig.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)CsvSerializer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)CsvStreamExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)CsvWriter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DateTimeExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DynamicJson.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DynamicProxy.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Env.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)HashSet.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ITracer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ITypeSerializer.Generic.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)JsConfig.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)JsConfigScope.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)JsonObject.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)JsonSerializer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)JsonSerializer.Generic.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Json\JsonReader.Generic.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Json\JsonTypeSerializer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Json\JsonUtils.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Json\JsonWriter.Generic.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)JsvFormatter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Jsv\JsvDeserializeType.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Jsv\JsvReader.Generic.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Jsv\JsvSerializer.Generic.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Jsv\JsvTypeSerializer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Jsv\JsvWriter.Generic.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ListExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MapExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Marc\Link.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Marc\ObjectAccessor.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Marc\TypeAccessor.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)QueryStringSerializer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ReflectionExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Reflection\StaticAccessors.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)StreamExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)StringExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Support\AssemblyTypeDefinition.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Support\DoubleConverter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Support\TypePair.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)SystemTime.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)TextExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Tracer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)TranslateListWithElements.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)TypeConfig.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)TypeSerializer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)TypeSerializer.Generic.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Wrapper\JsonSerializer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)XmlSerializer.cs" />
+  </ItemGroup>
+</Project>
