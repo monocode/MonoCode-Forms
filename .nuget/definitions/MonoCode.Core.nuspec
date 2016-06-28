@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>MonoCode.Core</id>
+    <version>1.0.0-pre01</version>
+    <title>MonoCode - Core</title>
+    <authors>MonoCode Team</authors>
+    <owners>MonoCode Team</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>This packages implements core base functionality that all of MonoCode uses.  Do not included this directly.</description>
+    <summary>MonoCode is a open source project that aims to provide a powerfull and cross platform set of controls tailored to work with Xamarin Forms.</summary>
+    <copyright>Copyright Â© 2016 MonoCode Team</copyright>
+    <tags>Xamarin MonoCode</tags>
+  </metadata>
+  <files>
+    <file src="..\..\source\Core\bin\Debug\XLabs.Core.dll" target="lib\portable-net45+win+wpa81+MonoAndroid10+xamarinios10+MonoTouch10\XLabs.Core.dll" exclude="" />
+    <file src="..\..\source\Core\bin\Debug\XLabs.Core.pdb" target="lib\portable-net45+win+wpa81+MonoAndroid10+xamarinios10+MonoTouch10\XLabs.Core.pdb" exclude="" />
+    <file src="..\..\.nuget\source\MonoCode.Core.Nuspec\MonoCode.Core.Readme.md" target="" exclude="" />
+  </files>
+</package>

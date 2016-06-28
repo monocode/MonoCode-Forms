@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>MonoCode.Serialization.ServiceStack</id>
+    <version>1.0.0-pre01</version>
+    <title>MonoCode - Serialization - ServiceStack</title>
+    <authors>MonoCode Team</authors>
+    <owners>MonoCode Team</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>This package implements the Serialization provider contracts via ServiceStack</description>
+    <summary>MonoCode is a open source project that aims to provide a powerfull and cross platform set of controls tailored to work with Xamarin Forms.</summary>
+    <copyright>Copyright Â© 2016 XLabs Team</copyright>
+    <tags>Xamarin MonoCode Serialization ServiceStack</tags>
+    <dependencies>
+      <group targetFramework="MonoAndroid60">
+        <dependency id="MonoCode.Serialization" version="1.0.0-pre01" />
+      </group>
+      <group targetFramework="xamarinios10">
+        <dependency id="MonoCode.Serialization" version="1.0.0-pre01" />
+      </group>
+      <group targetFramework=".NETCore50">
+        <dependency id="MonoCode.Serialization" version="1.0.0-pre01" />
+      </group>
+      <group targetFramework="wpa81">
+        <dependency id="MonoCode.Serialization" version="1.0.0-pre01" />
+      </group>
+      <group targetFramework="win81">
+        <dependency id="MonoCode.Serialization" version="1.0.0-pre01" />
+      </group>
+      <group targetFramework="portable-net45+win+wpa81+MonoAndroid10+xamarinios10+MonoTouch10">
+        <dependency id="MonoCode.Serialization" version="1.0.0-pre01" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="..\..\source\Serialization\XLabs.Serialization.ServiceStack.Droid\bin\Debug\XLabs.Serialization.ServiceStackV3.Droid.dll" target="lib\MonoAndroid60\XLabs.Serialization.ServiceStackV3.Droid.dll" exclude="" />
+    <file src="..\..\source\Serialization\XLabs.Serialization.ServiceStack.Droid\bin\Debug\XLabs.Serialization.ServiceStackV3.Droid.pdb" target="lib\MonoAndroid60\XLabs.Serialization.ServiceStackV3.Droid.pdb" exclude="" />
+    <file src="..\..\source\Serialization\XLabs.Serialization.ServiceStack.iOS\bin\Debug\XLabs.Serialization.ServiceStackV3.iOS.dll" target="lib\xamarinios10\XLabs.Serialization.ServiceStackV3.iOS.dll" exclude="" />
+    <file src="..\..\source\Serialization\XLabs.Serialization.ServiceStack.iOS\bin\Debug\XLabs.Serialization.ServiceStackV3.iOS.pdb" target="lib\xamarinios10\XLabs.Serialization.ServiceStackV3.iOS.pdb" exclude="" />
+    <file src="C:\Program Files (x86)\Windows Kits\10\UnionMetadata\facade\Windows.winmd" target="lib\.NETCore50\Windows.winmd" exclude="" />
+    <file src="..\..\source\Serialization\XLabs.Serialization.ServiceStack\bin\Debug\XLabs.Serialization.ServiceStack.dll" target="lib\portable-net45+win+wpa81+MonoAndroid10+xamarinios10+MonoTouch10\XLabs.Serialization.ServiceStack.dll" exclude="" />
+    <file src="..\..\source\Serialization\XLabs.Serialization.ServiceStack\bin\Debug\XLabs.Serialization.ServiceStack.pdb" target="lib\portable-net45+win+wpa81+MonoAndroid10+xamarinios10+MonoTouch10\XLabs.Serialization.ServiceStack.pdb" exclude="" />
+    <file src="..\..\.nuget\source\MonoCode.Serialization.ServiceStack.Nuspec\MonoCode.Serialization.ServiceStack.Readme.md" target="" exclude="" />
+  </files>
+</package>

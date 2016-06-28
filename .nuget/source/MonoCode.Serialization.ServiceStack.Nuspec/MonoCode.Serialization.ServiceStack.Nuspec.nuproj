@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|AnyCPU">
+      <Configuration>Debug</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|AnyCPU">
+      <Configuration>Release</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>a73f4a30-7a0f-4075-b290-9ef2360c1312</ProjectGuid>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NuProjPath Condition=" '$(NuProjPath)' == '' ">$(SolutionDir)\..\.nuget\nuproj\tools</NuProjPath>
+  </PropertyGroup>
+  <Import Project="$(NuProjPath)\NuProj.props" Condition="Exists('$(NuProjPath)\NuProj.props')" />
+  <PropertyGroup Label="Configuration">
+    <Id>MonoCode.Serialization.ServiceStack</Id>
+    <Version>0.0.0000</Version>
+    <Title>MonoCode - Serialization - ServiceStack</Title>
+    <Authors>MonoCode Team</Authors>
+    <Owners>MonoCode Team</Owners>
+    <Summary>MonoCode is a open source project that aims to provide a powerfull and cross platform set of controls tailored to work with Xamarin Forms.</Summary>
+    <Description>This package implements the Serialization provider contracts via ServiceStack</Description>
+    <Copyright>Copyright © 2016 XLabs Team</Copyright>
+    <Tags>Xamarin MonoCode Serialization ServiceStack</Tags>
+    <OutputPath>$(SolutionDir)..\artifacts\Packages</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="MonoCode.Serialization.ServiceStack.Readme.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\source\Serialization\XLabs.Serialization.ServiceStack.Droid\XLabs.Serialization.ServiceStackV3.Droid.csproj" />
+    <ProjectReference Include="..\..\..\source\Serialization\XLabs.Serialization.ServiceStack.iOS\XLabs.Serialization.ServiceStackV3.iOS.csproj" />
+    <ProjectReference Include="..\..\..\source\Serialization\XLabs.Serialization.ServiceStack.UWP\XLabs.Serialization.ServiceStackV3.UWP.csproj" />
+    <ProjectReference Include="..\..\..\source\Serialization\XLabs.Serialization.ServiceStack.WinRT.Phone\XLabs.Serialization.ServiceStackV3.WinRT.Phone.csproj" />
+    <ProjectReference Include="..\..\..\source\Serialization\XLabs.Serialization.ServiceStack.WinRT\XLabs.Serialization.ServiceStackV3.WinRT.csproj" />
+    <ProjectReference Include="..\..\..\source\Serialization\XLabs.Serialization.ServiceStack\XLabs.Serialization.ServiceStack.csproj" />
+    <ProjectReference Include="..\MonoCode.Serialization.NuSpec\MonoCode.Serialization.NuSpec.nuproj" />
+  </ItemGroup>
+  <Import Project="$(NuProjPath)\NuProj.targets" />
+</Project>

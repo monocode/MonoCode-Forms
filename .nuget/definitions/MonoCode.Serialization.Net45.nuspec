@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>MonoCode.Serialization.Net45</id>
+    <version>1.0.0-pre01</version>
+    <title>MonoCode - Serialization - Net45</title>
+    <authors>MonoCode Team</authors>
+    <owners>MonoCode Team</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>This package implements the Serialization provider contracts for serializers supported in full .NET 4.5 framework</description>
+    <summary>MonoCode is a open source project that aims to provide a powerfull and cross platform set of controls tailored to work with Xamarin Forms.</summary>
+    <copyright>Copyright Â© 2016 MonoCode Team</copyright>
+    <tags>Xamarin MonoCode Serialization datacontract</tags>
+    <dependencies>
+      <group targetFramework="net45">
+        <dependency id="MonoCode.Serialization" version="1.0.0-pre01" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="..\..\source\Serialization\XLabs.Serialization.Net45\bin\Debug\XLabs.Serialization.Net45.dll" target="lib\net45\XLabs.Serialization.Net45.dll" exclude="" />
+    <file src="..\..\source\Serialization\XLabs.Serialization.Net45\bin\Debug\XLabs.Serialization.Net45.pdb" target="lib\net45\XLabs.Serialization.Net45.pdb" exclude="" />
+    <file src="..\..\.nuget\source\MonoCode.Serialization.Net45.Nuspec\MonoCode.Serialization.Net45.Readme.md" target="" exclude="" />
+  </files>
+</package>

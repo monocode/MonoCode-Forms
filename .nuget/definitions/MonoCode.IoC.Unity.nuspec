@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>MonoCode.IoC.Unity</id>
+    <version>1.0.0-pre01</version>
+    <title>MonoCode - IoC - Unity</title>
+    <authors>MonoCode Team</authors>
+    <owners>MonoCode Team</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>This package implements the IOC provider contracts via Microsoft Unity</description>
+    <summary>MonoCode is a open source project that aims to provide a powerfull and cross platform set of controls tailored to work with Xamarin Forms.</summary>
+    <copyright>Copyright Â© 2016 MonoCode Team</copyright>
+    <tags>Xamarin MonoCode IOC</tags>
+    <dependencies>
+      <group targetFramework="portable-net45+win+wpa81+MonoAndroid10+xamarinios10+MonoTouch10">
+        <dependency id="MonoCode.IoC" version="1.0.0-pre01" />
+      </group>
+      <group targetFramework="portable-net45+win80+wpa81">
+        <dependency id="CommonServiceLocator" version="1.3" />
+        <dependency id="Unity" version="4.0.1" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="..\..\source\IOC\XLabs.IOC.Unity\bin\Debug\XLabs.IOC.Unity.dll" target="lib\portable-net45+win+wpa81+MonoAndroid10+xamarinios10+MonoTouch10\XLabs.IOC.Unity.dll" exclude="" />
+    <file src="..\..\source\IOC\XLabs.IOC.Unity\bin\Debug\XLabs.IOC.Unity.pdb" target="lib\portable-net45+win+wpa81+MonoAndroid10+xamarinios10+MonoTouch10\XLabs.IOC.Unity.pdb" exclude="" />
+    <file src="..\..\.nuget\source\MonoCode.IOC.Unity.Nuspec\MonoCode.IOC.Unity.Readme.md" target="" exclude="" />
+  </files>
+</package>

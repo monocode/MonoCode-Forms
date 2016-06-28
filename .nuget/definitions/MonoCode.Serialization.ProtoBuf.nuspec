@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>MonoCode.Serialization.ProtoBuf</id>
+    <version>1.0.0-pre01</version>
+    <title>MonoCode - Serialization - ProtoBuf</title>
+    <authors>MonoCode Team</authors>
+    <owners>MonoCode Team</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>This package implements the Serialization provider contracts via ProtoBuf</description>
+    <summary>MonoCode is a open source project that aims to provide a powerfull and cross platform set of controls tailored to work with Xamarin Forms.</summary>
+    <copyright>Copyright Â© 2016 MonoCode Team</copyright>
+    <tags>Xamarin MonoCode Serialization ProtoBuf</tags>
+    <dependencies>
+      <group targetFramework="portable-net45+win+MonoAndroid10+xamarinios10+MonoTouch10">
+        <dependency id="MonoCode.Serialization" version="1.0.0-pre01" />
+      </group>
+      <group targetFramework="portable-net45+win80">
+        <dependency id="protobuf-portable-net" version="2.0.0.668" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="..\..\source\Serialization\XLabs.Serialization.ProtoBuf\bin\Debug\XLabs.Serialization.ProtoBuf.dll" target="lib\portable-net45+win+MonoAndroid10+xamarinios10+MonoTouch10\XLabs.Serialization.ProtoBuf.dll" exclude="" />
+    <file src="..\..\source\Serialization\XLabs.Serialization.ProtoBuf\bin\Debug\XLabs.Serialization.ProtoBuf.pdb" target="lib\portable-net45+win+MonoAndroid10+xamarinios10+MonoTouch10\XLabs.Serialization.ProtoBuf.pdb" exclude="" />
+    <file src="..\..\.nuget\source\MonoCode.Serialization.ProtoBuf.Nuspec\MonoCode.Serialization.ProtoBuf.Readme.md" target="" exclude="" />
+  </files>
+</package>

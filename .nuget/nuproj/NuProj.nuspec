@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
+  <metadata>
+    <id>NuProj</id>
+    <version>0.10.4-beta-gf7fc34e7d8</version>
+    <title>NuProj</title>
+    <authors>Immo Landwerth</authors>
+    <owners>Immo Landwerth</owners>
+    <licenseUrl>http://nuproj.net/LICENSE</licenseUrl>
+    <projectUrl>http://nuproj.net</projectUrl>
+    <iconUrl>http://bit.ly/NuProjLogo64</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <developmentDependency>true</developmentDependency>
+    <description>NuProj provides an MSBuild-based approach to create NuGet packages (.nupkg). The build projects are called .nuproj files and are regular MSBuild projects.
+
+In general, the definition of a NuProj file is very similar to the NuGet .nuspec file – except that it is done via MSBuild. In fact, NuProj generates the .nuspec file and simply calles NuGet to build the package.  
+
+Thus, for details you can still refer to the official NuGet documentation.
+
+There is also a Visual Studio extension which you find under http://bit.ly/NuProjVS.</description>
+    <summary>NuProj provides an MSBuild-based approach to create NuGet packages (.nupkg). The build projects are called .nuproj files and are regular MSBuild projects.</summary>
+    <copyright>Copyright © Immo Landwerth</copyright>
+    <tags>NuGet nupkg MSBuild NuProj</tags>
+  </metadata>
+</package>

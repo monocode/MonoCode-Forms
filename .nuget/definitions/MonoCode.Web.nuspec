@@ -1,0 +1,95 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>MonoCode.Web</id>
+    <version>1.0.0-pre01</version>
+    <title>MonoCode - Web</title>
+    <authors>MonoCode Team</authors>
+    <owners>MonoCode Team</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>This package contains Web related interfaces and services (e.g. REST client).</description>
+    <summary>MonoCode is a open source project that aims to provide a powerfull and cross platform set of controls tailored to work with Xamarin Forms.</summary>
+    <copyright>Copyright Â© 2016 MonoCode Team</copyright>
+    <tags>Xamarin MonoCode Web REST</tags>
+    <dependencies>
+      <group targetFramework="MonoAndroid60">
+        <dependency id="Microsoft.Bcl" version="1.1.10" />
+        <dependency id="Microsoft.Bcl.Async" version="1.0.168" />
+        <dependency id="Microsoft.Bcl.Build" version="1.0.21" />
+        <dependency id="Microsoft.Net.Http" version="2.2.29" />
+      </group>
+      <group targetFramework="xamarinios10">
+        <dependency id="Microsoft.Bcl" version="1.1.10" />
+        <dependency id="Microsoft.Bcl.Async" version="1.0.168" />
+        <dependency id="Microsoft.Bcl.Build" version="1.0.21" />
+        <dependency id="Microsoft.Net.Http" version="2.2.29" />
+      </group>
+      <group targetFramework="net452">
+        <dependency id="Microsoft.Bcl" version="1.1.10" />
+        <dependency id="Microsoft.Bcl.Async" version="1.0.168" />
+        <dependency id="Microsoft.Bcl.Build" version="1.0.21" />
+        <dependency id="Microsoft.Net.Http" version="2.2.29" />
+      </group>
+      <group targetFramework="wpa81">
+        <dependency id="Microsoft.Bcl" version="1.1.10" />
+        <dependency id="Microsoft.Bcl.Async" version="1.0.168" />
+        <dependency id="Microsoft.Bcl.Build" version="1.0.21" />
+        <dependency id="Microsoft.Net.Http" version="2.2.29" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="..\..\source\Core\bin\Debug\XLabs.Core.dll" target="lib\MonoAndroid60\XLabs.Core.dll" exclude="" />
+    <file src="..\..\source\Core\bin\Debug\XLabs.Core.dll" target="lib\xamarinios10\XLabs.Core.dll" exclude="" />
+    <file src="..\..\source\Core\bin\Debug\XLabs.Core.dll" target="lib\net45\XLabs.Core.dll" exclude="" />
+    <file src="..\..\source\Core\bin\Debug\XLabs.Core.dll" target="lib\.NETCore50\XLabs.Core.dll" exclude="" />
+    <file src="..\..\source\Core\bin\Debug\XLabs.Core.dll" target="lib\wpa81\XLabs.Core.dll" exclude="" />
+    <file src="..\..\source\Core\bin\Debug\XLabs.Core.dll" target="lib\win81\XLabs.Core.dll" exclude="" />
+    <file src="..\..\source\Serialization\XLabs.Serialization\bin\Debug\XLabs.Serialization.dll" target="lib\MonoAndroid60\XLabs.Serialization.dll" exclude="" />
+    <file src="..\..\source\Serialization\XLabs.Serialization\bin\Debug\XLabs.Serialization.dll" target="lib\xamarinios10\XLabs.Serialization.dll" exclude="" />
+    <file src="..\..\source\Serialization\XLabs.Serialization\bin\Debug\XLabs.Serialization.dll" target="lib\net45\XLabs.Serialization.dll" exclude="" />
+    <file src="..\..\source\Serialization\XLabs.Serialization\bin\Debug\XLabs.Serialization.dll" target="lib\.NETCore50\XLabs.Serialization.dll" exclude="" />
+    <file src="..\..\source\Serialization\XLabs.Serialization\bin\Debug\XLabs.Serialization.dll" target="lib\wpa81\XLabs.Serialization.dll" exclude="" />
+    <file src="..\..\source\Serialization\XLabs.Serialization\bin\Debug\XLabs.Serialization.dll" target="lib\win81\XLabs.Serialization.dll" exclude="" />
+    <file src="..\..\source\Web\XLabs.Web\bin\Debug\XLabs.Web.dll" target="lib\MonoAndroid60\XLabs.Web.dll" exclude="" />
+    <file src="..\..\source\Web\XLabs.Web\bin\Debug\XLabs.Web.dll" target="lib\xamarinios10\XLabs.Web.dll" exclude="" />
+    <file src="..\..\source\Web\XLabs.Web\bin\Debug\XLabs.Web.dll" target="lib\net45\XLabs.Web.dll" exclude="" />
+    <file src="..\..\source\Web\XLabs.Web\bin\Debug\XLabs.Web.dll" target="lib\.NETCore50\XLabs.Web.dll" exclude="" />
+    <file src="..\..\source\Web\XLabs.Web\bin\Debug\XLabs.Web.dll" target="lib\wpa81\XLabs.Web.dll" exclude="" />
+    <file src="..\..\source\Web\XLabs.Web\bin\Debug\XLabs.Web.dll" target="lib\win81\XLabs.Web.dll" exclude="" />
+    <file src="..\..\source\Web\XLabs.Web\bin\Debug\XLabs.Web.dll" target="lib\portable-net45+win+wpa81+MonoAndroid10+xamarinios10+MonoTouch10\XLabs.Web.dll" exclude="" />
+    <file src="..\..\source\Core\bin\Debug\XLabs.Core.pdb" target="lib\MonoAndroid60\XLabs.Core.pdb" exclude="" />
+    <file src="..\..\source\Core\bin\Debug\XLabs.Core.pdb" target="lib\xamarinios10\XLabs.Core.pdb" exclude="" />
+    <file src="..\..\source\Core\bin\Debug\XLabs.Core.pdb" target="lib\net45\XLabs.Core.pdb" exclude="" />
+    <file src="..\..\source\Core\bin\Debug\XLabs.Core.pdb" target="lib\.NETCore50\XLabs.Core.pdb" exclude="" />
+    <file src="..\..\source\Core\bin\Debug\XLabs.Core.pdb" target="lib\wpa81\XLabs.Core.pdb" exclude="" />
+    <file src="..\..\source\Core\bin\Debug\XLabs.Core.pdb" target="lib\win81\XLabs.Core.pdb" exclude="" />
+    <file src="..\..\source\Serialization\XLabs.Serialization\bin\Debug\XLabs.Serialization.pdb" target="lib\MonoAndroid60\XLabs.Serialization.pdb" exclude="" />
+    <file src="..\..\source\Serialization\XLabs.Serialization\bin\Debug\XLabs.Serialization.pdb" target="lib\xamarinios10\XLabs.Serialization.pdb" exclude="" />
+    <file src="..\..\source\Serialization\XLabs.Serialization\bin\Debug\XLabs.Serialization.pdb" target="lib\net45\XLabs.Serialization.pdb" exclude="" />
+    <file src="..\..\source\Serialization\XLabs.Serialization\bin\Debug\XLabs.Serialization.pdb" target="lib\.NETCore50\XLabs.Serialization.pdb" exclude="" />
+    <file src="..\..\source\Serialization\XLabs.Serialization\bin\Debug\XLabs.Serialization.pdb" target="lib\wpa81\XLabs.Serialization.pdb" exclude="" />
+    <file src="..\..\source\Serialization\XLabs.Serialization\bin\Debug\XLabs.Serialization.pdb" target="lib\win81\XLabs.Serialization.pdb" exclude="" />
+    <file src="..\..\source\Web\XLabs.Web\bin\Debug\XLabs.Web.pdb" target="lib\MonoAndroid60\XLabs.Web.pdb" exclude="" />
+    <file src="..\..\source\Web\XLabs.Web\bin\Debug\XLabs.Web.pdb" target="lib\xamarinios10\XLabs.Web.pdb" exclude="" />
+    <file src="..\..\source\Web\XLabs.Web\bin\Debug\XLabs.Web.pdb" target="lib\net45\XLabs.Web.pdb" exclude="" />
+    <file src="..\..\source\Web\XLabs.Web\bin\Debug\XLabs.Web.pdb" target="lib\.NETCore50\XLabs.Web.pdb" exclude="" />
+    <file src="..\..\source\Web\XLabs.Web\bin\Debug\XLabs.Web.pdb" target="lib\wpa81\XLabs.Web.pdb" exclude="" />
+    <file src="..\..\source\Web\XLabs.Web\bin\Debug\XLabs.Web.pdb" target="lib\win81\XLabs.Web.pdb" exclude="" />
+    <file src="..\..\source\Web\XLabs.Web\bin\Debug\XLabs.Web.pdb" target="lib\portable-net45+win+wpa81+MonoAndroid10+xamarinios10+MonoTouch10\XLabs.Web.pdb" exclude="" />
+    <file src="..\..\source\Web\XLabs.Web.Droid\bin\Debug\XLabs.Web.Droid.dll" target="lib\MonoAndroid60\XLabs.Web.Droid.dll" exclude="" />
+    <file src="..\..\source\Web\XLabs.Web.Droid\bin\Debug\XLabs.Web.Droid.pdb" target="lib\MonoAndroid60\XLabs.Web.Droid.pdb" exclude="" />
+    <file src="..\..\source\Web\XLabs.Web.iOS\bin\Debug\XLabs.Web.iOS.dll" target="lib\xamarinios10\XLabs.Web.iOS.dll" exclude="" />
+    <file src="..\..\source\Web\XLabs.Web.iOS\bin\Debug\XLabs.Web.iOS.pdb" target="lib\xamarinios10\XLabs.Web.iOS.pdb" exclude="" />
+    <file src="..\..\source\Web\XLabs.Web.Net45\bin\Debug\XLabs.Web.Net45.dll" target="lib\net45\XLabs.Web.Net45.dll" exclude="" />
+    <file src="..\..\source\Web\XLabs.Web.Net45\bin\Debug\XLabs.Web.Net45.pdb" target="lib\net45\XLabs.Web.Net45.pdb" exclude="" />
+    <file src="C:\Program Files (x86)\Windows Kits\10\UnionMetadata\facade\Windows.winmd" target="lib\.NETCore50\Windows.winmd" exclude="" />
+    <file src="..\..\source\Web\XLabs.Web.UWP\bin\Debug\XLabs.Web.UWP.dll" target="lib\.NETCore50\XLabs.Web.UWP.dll" exclude="" />
+    <file src="..\..\source\Web\XLabs.Web.UWP\bin\Debug\XLabs.Web.UWP.pdb" target="lib\.NETCore50\XLabs.Web.UWP.pdb" exclude="" />
+    <file src="..\..\source\Web\XLabs.Web.WinRT.Phone\bin\Debug\XLabs.Web.WinRT.Phone.dll" target="lib\wpa81\XLabs.Web.WinRT.Phone.dll" exclude="" />
+    <file src="..\..\source\Web\XLabs.Web.WinRT.Phone\bin\Debug\XLabs.Web.WinRT.Phone.pdb" target="lib\wpa81\XLabs.Web.WinRT.Phone.pdb" exclude="" />
+    <file src="..\..\source\Web\XLabs.Web.WinRT\bin\Debug\XLabs.Web.WinRT.dll" target="lib\win81\XLabs.Web.WinRT.dll" exclude="" />
+    <file src="..\..\source\Web\XLabs.Web.WinRT\bin\Debug\XLabs.Web.WinRT.pdb" target="lib\win81\XLabs.Web.WinRT.pdb" exclude="" />
+    <file src="..\..\.nuget\source\MonoCode.Web.Nuspec\MonoCode.Settings.Web.Readme.md" target="" exclude="" />
+  </files>
+</package>

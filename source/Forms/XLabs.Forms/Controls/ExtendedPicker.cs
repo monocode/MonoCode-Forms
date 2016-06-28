@@ -149,7 +149,7 @@ namespace XLabs.Forms.Controls
                 }
                 else
                 {
-                    picker.SelectedItem = selectedItem.ToString();
+                    picker.SelectedItem = selectedItem;
                 }
             }
             if (bindablePicker.ItemsSource != null && bindablePicker.SelectedItem != null)

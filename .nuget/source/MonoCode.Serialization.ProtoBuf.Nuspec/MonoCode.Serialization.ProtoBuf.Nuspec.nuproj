@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|AnyCPU">
+      <Configuration>Debug</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|AnyCPU">
+      <Configuration>Release</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>19602a6f-03ab-49f2-9663-06c20fa10743</ProjectGuid>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NuProjPath Condition=" '$(NuProjPath)' == '' ">$(SolutionDir)\..\.nuget\nuproj\tools</NuProjPath>
+  </PropertyGroup>
+  <Import Project="$(NuProjPath)\NuProj.props" Condition="Exists('$(NuProjPath)\NuProj.props')" />
+  <PropertyGroup Label="Configuration">
+    <Id>MonoCode.Serialization.ProtoBuf</Id>
+    <Version>0.0.0000</Version>
+    <Title>MonoCode - Serialization - ProtoBuf</Title>
+    <Authors>MonoCode Team</Authors>
+    <Owners>MonoCode Team</Owners>
+    <Summary>MonoCode is a open source project that aims to provide a powerfull and cross platform set of controls tailored to work with Xamarin Forms.</Summary>
+    <Description>This package implements the Serialization provider contracts via ProtoBuf</Description>
+    <Copyright>Copyright © 2016 MonoCode Team</Copyright>
+    <Tags>Xamarin MonoCode Serialization ProtoBuf</Tags>
+    <OutputPath>$(SolutionDir)..\artifacts\Packages</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="MonoCode.Serialization.ProtoBuf.Readme.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\source\Serialization\XLabs.Serialization.ProtoBuf\XLabs.Serialization.ProtoBuf.csproj" />
+    <ProjectReference Include="..\MonoCode.Serialization.NuSpec\MonoCode.Serialization.NuSpec.nuproj" />
+  </ItemGroup>
+  <Import Project="$(NuProjPath)\NuProj.targets" />
+</Project>

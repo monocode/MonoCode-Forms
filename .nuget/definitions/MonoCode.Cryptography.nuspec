@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>MonoCode.Cryptography</id>
+    <version>1.0.0-pre01</version>
+    <title>MonoCode - Cryptography</title>
+    <authors>MonoCode Team</authors>
+    <owners>MonoCode Team</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>This package contains helpers to work with cryptography.</description>
+    <summary>MonoCode is a open source project that aims to provide a powerfull and cross platform set of controls tailored to work with Xamarin Forms.</summary>
+    <copyright>Copyright Â© 2016 MonoCode Team</copyright>
+    <tags>Xamarin MonoCode Cryptography</tags>
+  </metadata>
+  <files>
+    <file src="..\..\source\Cryptography\XLabs.Cryptography\bin\Debug\XLabs.Cryptography.dll" target="lib\portable-net45+win+wpa81+MonoAndroid10+xamarinios10+MonoTouch10\XLabs.Cryptography.dll" exclude="" />
+    <file src="..\..\source\Cryptography\XLabs.Cryptography\bin\Debug\XLabs.Cryptography.pdb" target="lib\portable-net45+win+wpa81+MonoAndroid10+xamarinios10+MonoTouch10\XLabs.Cryptography.pdb" exclude="" />
+    <file src="..\..\.nuget\source\MonoCode.Cryptography.Nuspec\MonoCode.Cryptography.Readme.md" target="" exclude="" />
+  </files>
+</package>

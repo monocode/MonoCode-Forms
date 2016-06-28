@@ -1,0 +1,93 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>MonoCode.Forms</id>
+    <version>1.0.0-pre01</version>
+    <title>MonoCode - Forms</title>
+    <authors>MonoCode Team</authors>
+    <owners>MonoCode Team</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>This package contains the cross-platform MonoCode Forms framework and controls.</description>
+    <summary>MonoCode is a open source project that aims to provide a powerfull and cross platform set of controls tailored to work with Xamarin Forms.</summary>
+    <copyright>Copyright Â© 2016 MonoCode Team</copyright>
+    <tags>Xamarin MonoCode Forms Controls GridView ListView</tags>
+    <dependencies>
+      <group targetFramework="MonoAndroid60">
+        <dependency id="MonoCode.Core" version="1.0.0-pre01" />
+        <dependency id="MonoCode.IoC" version="1.0.0-pre01" />
+        <dependency id="MonoCode.Platform" version="1.0.0-pre01" />
+        <dependency id="MonoCode.Serialization" version="1.0.0-pre01" />
+        <dependency id="Xamarin.Android.Support.Animated.Vector.Drawable" version="23.3.0" />
+        <dependency id="Xamarin.Android.Support.Design" version="23.3.0" />
+        <dependency id="Xamarin.Android.Support.v4" version="23.3.0" />
+        <dependency id="Xamarin.Android.Support.v7.AppCompat" version="23.3.0" />
+        <dependency id="Xamarin.Android.Support.v7.CardView" version="23.3.0" />
+        <dependency id="Xamarin.Android.Support.v7.MediaRouter" version="23.3.0" />
+        <dependency id="Xamarin.Android.Support.v7.RecyclerView" version="23.3.0" />
+        <dependency id="Xamarin.Android.Support.Vector.Drawable" version="23.3.0" />
+        <dependency id="Xamarin.Forms" version="2.2.0.45" />
+      </group>
+      <group targetFramework="xamarinios10">
+        <dependency id="MonoCode.Core" version="1.0.0-pre01" />
+        <dependency id="MonoCode.IoC" version="1.0.0-pre01" />
+        <dependency id="MonoCode.Platform" version="1.0.0-pre01" />
+        <dependency id="MonoCode.Serialization" version="1.0.0-pre01" />
+        <dependency id="Xamarin.Forms" version="2.2.0.45" />
+      </group>
+      <group targetFramework=".NETCore50">
+        <dependency id="MonoCode.Core" version="1.0.0-pre01" />
+        <dependency id="MonoCode.IoC" version="1.0.0-pre01" />
+        <dependency id="MonoCode.Platform" version="1.0.0-pre01" />
+        <dependency id="MonoCode.Serialization" version="1.0.0-pre01" />
+      </group>
+      <group targetFramework="wpa81">
+        <dependency id="MonoCode.Core" version="1.0.0-pre01" />
+        <dependency id="MonoCode.IoC" version="1.0.0-pre01" />
+        <dependency id="MonoCode.Platform" version="1.0.0-pre01" />
+        <dependency id="MonoCode.Serialization" version="1.0.0-pre01" />
+        <dependency id="Xamarin.Forms" version="2.2.0.45" />
+      </group>
+      <group targetFramework="win81">
+        <dependency id="MonoCode.Core" version="1.0.0-pre01" />
+        <dependency id="MonoCode.IoC" version="1.0.0-pre01" />
+        <dependency id="MonoCode.Platform" version="1.0.0-pre01" />
+        <dependency id="MonoCode.Serialization" version="1.0.0-pre01" />
+        <dependency id="Xamarin.Forms" version="2.2.0.45" />
+      </group>
+      <group targetFramework="portable-net45+win+wpa81+MonoAndroid10+xamarinios10+MonoTouch10">
+        <dependency id="MonoCode.Core" version="1.0.0-pre01" />
+        <dependency id="MonoCode.IoC" version="1.0.0-pre01" />
+        <dependency id="MonoCode.Platform" version="1.0.0-pre01" />
+        <dependency id="MonoCode.Serialization" version="1.0.0-pre01" />
+      </group>
+      <group targetFramework="portable-net45+win80+wpa81">
+        <dependency id="Xamarin.Forms" version="2.2.0.45" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="..\..\source\Forms\XLabs.Forms\bin\Debug\XLabs.Forms.dll" target="lib\MonoAndroid60\XLabs.Forms.dll" exclude="" />
+    <file src="..\..\source\Forms\XLabs.Forms\bin\Debug\XLabs.Forms.dll" target="lib\xamarinios10\XLabs.Forms.dll" exclude="" />
+    <file src="..\..\source\Forms\XLabs.Forms\bin\Debug\XLabs.Forms.dll" target="lib\.NETCore50\XLabs.Forms.dll" exclude="" />
+    <file src="..\..\source\Forms\XLabs.Forms\bin\Debug\XLabs.Forms.dll" target="lib\wpa81\XLabs.Forms.dll" exclude="" />
+    <file src="..\..\source\Forms\XLabs.Forms\bin\Debug\XLabs.Forms.dll" target="lib\win81\XLabs.Forms.dll" exclude="" />
+    <file src="..\..\source\Forms\XLabs.Forms\bin\Debug\XLabs.Forms.dll" target="lib\portable-net45+win+wpa81+MonoAndroid10+xamarinios10+MonoTouch10\XLabs.Forms.dll" exclude="" />
+    <file src="..\..\source\Forms\XLabs.Forms\bin\Debug\XLabs.Forms.pdb" target="lib\MonoAndroid60\XLabs.Forms.pdb" exclude="" />
+    <file src="..\..\source\Forms\XLabs.Forms\bin\Debug\XLabs.Forms.pdb" target="lib\xamarinios10\XLabs.Forms.pdb" exclude="" />
+    <file src="..\..\source\Forms\XLabs.Forms\bin\Debug\XLabs.Forms.pdb" target="lib\.NETCore50\XLabs.Forms.pdb" exclude="" />
+    <file src="..\..\source\Forms\XLabs.Forms\bin\Debug\XLabs.Forms.pdb" target="lib\wpa81\XLabs.Forms.pdb" exclude="" />
+    <file src="..\..\source\Forms\XLabs.Forms\bin\Debug\XLabs.Forms.pdb" target="lib\win81\XLabs.Forms.pdb" exclude="" />
+    <file src="..\..\source\Forms\XLabs.Forms\bin\Debug\XLabs.Forms.pdb" target="lib\portable-net45+win+wpa81+MonoAndroid10+xamarinios10+MonoTouch10\XLabs.Forms.pdb" exclude="" />
+    <file src="..\..\source\Forms\XLabs.Forms.Droid\bin\Debug\XLabs.Forms.Droid.dll" target="lib\MonoAndroid60\XLabs.Forms.Droid.dll" exclude="" />
+    <file src="..\..\source\Forms\XLabs.Forms.Droid\bin\Debug\XLabs.Forms.Droid.pdb" target="lib\MonoAndroid60\XLabs.Forms.Droid.pdb" exclude="" />
+    <file src="..\..\source\Forms\XLabs.Forms.iOS\bin\Debug\XLabs.Forms.iOS.dll" target="lib\xamarinios10\XLabs.Forms.iOS.dll" exclude="" />
+    <file src="..\..\source\Forms\XLabs.Forms.iOS\bin\Debug\XLabs.Forms.iOS.pdb" target="lib\xamarinios10\XLabs.Forms.iOS.pdb" exclude="" />
+    <file src="..\..\source\Forms\XLabs.Forms.UWP\bin\Debug\XLabs.Forms.UWP.dll" target="lib\.NETCore50\XLabs.Forms.UWP.dll" exclude="" />
+    <file src="..\..\source\Forms\XLabs.Forms.UWP\bin\Debug\XLabs.Forms.UWP.pdb" target="lib\.NETCore50\XLabs.Forms.UWP.pdb" exclude="" />
+    <file src="..\..\source\Forms\XLabs.Forms.WinRT.Phone\bin\Debug\XLabs.Forms.WinRT.Phone.dll" target="lib\wpa81\XLabs.Forms.WinRT.Phone.dll" exclude="" />
+    <file src="..\..\source\Forms\XLabs.Forms.WinRT.Phone\bin\Debug\XLabs.Forms.WinRT.Phone.pdb" target="lib\wpa81\XLabs.Forms.WinRT.Phone.pdb" exclude="" />
+    <file src="..\..\source\Forms\XLabs.Forms.WinRT\bin\Debug\XLabs.Forms.WinRT.dll" target="lib\win81\XLabs.Forms.WinRT.dll" exclude="" />
+    <file src="..\..\source\Forms\XLabs.Forms.WinRT\bin\Debug\XLabs.Forms.WinRT.pdb" target="lib\win81\XLabs.Forms.WinRT.pdb" exclude="" />
+    <file src="..\..\.nuget\source\MonoCode.Forms.Nuspec\MonoCode.Forms.Readme.md" target="" exclude="" />
+  </files>
+</package>

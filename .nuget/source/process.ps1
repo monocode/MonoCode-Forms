@@ -3,7 +3,13 @@ Param(
 	[string]$deploy_folder = "..\definitions",
 	
 	[Parameter()]
-	[string]$version = $null, # 2.2.000-pre02
+	[string]$version = $null, 
+	
+	[Parameter()]
+	[string]$key = $null,
+	
+	[Parameter()]
+	[string]$publish = $false,
 
 	[string]$relativePath = "..\.."
 )
@@ -13,10 +19,13 @@ Remove-Item "$deploy_folder\*.*" -ErrorAction SilentlyContinue
 
 $rootPathResolved = Resolve-Path $relativePath
 
+Write-Host $relativePath
+Write-Host $rootPathResolved
+
 gci -Recurse *.nuspec | Where-Object { $_.PSIsContainer -eq $False -and $_.Name -match ".nuspec$" } | % {
 	$f = $_.FullName
 	$s = $_.Name
-	Write-Host "`tProcssing and Updating: $s";
+	Write-Host "Procssing and Updating: $s";
 	Copy-Item -Force $f $deploy_folder
 	
 	#Write-Host "Reading XML"
@@ -24,8 +33,27 @@ gci -Recurse *.nuspec | Where-Object { $_.PSIsContainer -eq $False -and $_.Name 
 	[xml]$xmlContent = Get-Content -Path $xf
 	
 	if ($version) {
-		Write-Host "`t`tUpdating Version to $version"
+		Write-Host "`tUpdating Version to $version"
 		$xmlContent.package.metadata.version = "$version"
+		
+		foreach($x in $xmlContent.package.metadata.dependencies.group)
+		{
+			foreach($g in $x.dependency)
+			{
+				if($g.id.StartsWith("MonoCode."))
+				{
+					$g.Attributes["version"].Value = $version
+				}
+			}
+		}
+		
+		foreach($g in $xmlContent.package.metadata.dependencies.dependency)
+		{
+			if($g.id.StartsWith("MonoCode."))
+			{
+				$g.Attributes["version"].Value = $version
+			}
+		}
 	}
 	
 	$xmlContent.package.files.file | % {
@@ -35,6 +63,21 @@ gci -Recurse *.nuspec | Where-Object { $_.PSIsContainer -eq $False -and $_.Name 
 	}
 	
 	#Write-Host "Updating XML File: $xf"
+	
 	$xmlContent.Save($xf)
+	
+	if($publish -eq $true -and $key -ne $null)
+	{
+		$nugetPath = "$($rootPathResolved)\.nuget\nuget.exe "
+	
+		Write-Host "`tConverting nuget package." -ForegroundColor Green
+		$command = "$($nugetPath) pack $($xf) -OutputDirectory ..\deploy" 
+		iex $command	
+		
+		$nugetPackage = (Resolve-Path "..\deploy\$($xmlContent.package.metadata.id).$($xmlContent.package.metadata.version).nupkg")
+		#Write-Host $nugetPackage -ForegroundColor Cyan
+		Write-Host "`tUploading $($nugetPackage) to Nuget." -ForegroundColor Cyan
+		iex "$($nugetPath) push $($nugetPackage) -Source https://www.nuget.org/api/v2/package -ApiKey $($key)"
+	}
 }
 

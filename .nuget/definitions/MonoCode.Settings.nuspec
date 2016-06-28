@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>MonoCode.Settings</id>
+    <version>1.0.0-pre01</version>
+    <title>MonoCode - Settings</title>
+    <authors>MonoCode Team</authors>
+    <owners>MonoCode Team</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>This package implements the core Settings provider contracts</description>
+    <summary>MonoCode is a open source project that aims to provide a powerfull and cross platform set of controls tailored to work with Xamarin Forms.</summary>
+    <copyright>Copyright Â© 2016 MonoCode Team</copyright>
+    <tags>Xamarin MonoCode Settings</tags>
+  </metadata>
+  <files>
+    <file src="..\..\source\Settings\XLabs.Settings\bin\Debug\XLabs.Settings.dll" target="lib\portable-net45+win+wpa81+MonoAndroid10+xamarinios10+MonoTouch10\XLabs.Settings.dll" exclude="" />
+    <file src="..\..\source\Settings\XLabs.Settings\bin\Debug\XLabs.Settings.pdb" target="lib\portable-net45+win+wpa81+MonoAndroid10+xamarinios10+MonoTouch10\XLabs.Settings.pdb" exclude="" />
+    <file src="..\..\.nuget\source\MonoCode.Settings.Nuspec\MonoCode.Settings.Readme.md" target="" exclude="" />
+  </files>
+</package>

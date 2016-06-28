@@ -8,8 +8,8 @@ SET PRERELEASE=%4
 
 IF [%1] == [] SET TASK=BUILD
 IF [%2] == [] SET CONFIG=Debug
-IF [%3] == [] SET VERSION=2.2.0
-IF [%4] == [] SET PRERELEASE=pre05
+IF [%3] == [] SET VERSION=1.0.0
+IF [%4] == [] SET PRERELEASE=pre01
 
 IF [%1] == [help] GOTO DisplayHelp
 if [%3] == [] GOTO BuildWithOutVersion

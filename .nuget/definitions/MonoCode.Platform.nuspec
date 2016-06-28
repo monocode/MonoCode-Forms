@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>MonoCode.Platform</id>
+    <version>1.0.0-pre01</version>
+    <title>MonoCode - Platform</title>
+    <authors>MonoCode Team</authors>
+    <owners>MonoCode Team</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>This package contains the core cross-platform framework for all of MonoCode across all platforms.</description>
+    <summary>MonoCode is a open source project that aims to provide a powerfull and cross platform set of controls tailored to work with Xamarin Forms.</summary>
+    <copyright>Copyright Â© 2016 MonoCode Team</copyright>
+    <tags>Xamarin MonoCode</tags>
+    <dependencies>
+      <group targetFramework="MonoAndroid60">
+        <dependency id="MonoCode.IoC" version="1.0.0-pre01" />
+        <dependency id="MonoCode.Core" version="1.0.0-pre01" />
+        <dependency id="MonoCode.Serialization" version="1.0.0-pre01" />
+      </group>
+      <group targetFramework="xamarinios10">
+        <dependency id="MonoCode.IoC" version="1.0.0-pre01" />
+        <dependency id="MonoCode.Core" version="1.0.0-pre01" />
+        <dependency id="MonoCode.Serialization" version="1.0.0-pre01" />
+      </group>
+      <group targetFramework=".NETCore50">
+        <dependency id="MonoCode.IoC" version="1.0.0-pre01" />
+        <dependency id="MonoCode.Core" version="1.0.0-pre01" />
+        <dependency id="MonoCode.Serialization" version="1.0.0-pre01" />
+      </group>
+      <group targetFramework="wpa81">
+        <dependency id="MonoCode.IoC" version="1.0.0-pre01" />
+        <dependency id="MonoCode.Core" version="1.0.0-pre01" />
+        <dependency id="MonoCode.Serialization" version="1.0.0-pre01" />
+        <dependency id="SharpDX" version="3.0.2" />
+        <dependency id="SharpDX.Direct2D1" version="3.0.2" />
+        <dependency id="SharpDX.DXGI" version="3.0.2" />
+      </group>
+      <group targetFramework="win81">
+        <dependency id="MonoCode.IoC" version="1.0.0-pre01" />
+        <dependency id="MonoCode.Core" version="1.0.0-pre01" />
+        <dependency id="MonoCode.Serialization" version="1.0.0-pre01" />
+        <dependency id="SharpDX" version="3.0.2" />
+        <dependency id="SharpDX.Direct2D1" version="3.0.2" />
+        <dependency id="SharpDX.DXGI" version="3.0.2" />
+      </group>
+      <group targetFramework="portable-net45+win+wpa81+MonoAndroid10+xamarinios10+MonoTouch10">
+        <dependency id="MonoCode.IoC" version="1.0.0-pre01" />
+        <dependency id="MonoCode.Core" version="1.0.0-pre01" />
+        <dependency id="MonoCode.Serialization" version="1.0.0-pre01" />
+      </group>
+      <group targetFramework="portable-net45+win80+wpa81">
+        <dependency id="ExifLib.PCL" version="1.0.1" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="..\..\source\Platform\XLabs.Platform\bin\Debug\XLabs.Platform.dll" target="lib\MonoAndroid60\XLabs.Platform.dll" exclude="" />
+    <file src="..\..\source\Platform\XLabs.Platform\bin\Debug\XLabs.Platform.dll" target="lib\xamarinios10\XLabs.Platform.dll" exclude="" />
+    <file src="..\..\source\Platform\XLabs.Platform\bin\Debug\XLabs.Platform.dll" target="lib\.NETCore50\XLabs.Platform.dll" exclude="" />
+    <file src="..\..\source\Platform\XLabs.Platform\bin\Debug\XLabs.Platform.dll" target="lib\wpa81\XLabs.Platform.dll" exclude="" />
+    <file src="..\..\source\Platform\XLabs.Platform\bin\Debug\XLabs.Platform.dll" target="lib\win81\XLabs.Platform.dll" exclude="" />
+    <file src="..\..\source\Platform\XLabs.Platform\bin\Debug\XLabs.Platform.dll" target="lib\portable-net45+win+wpa81+MonoAndroid10+xamarinios10+MonoTouch10\XLabs.Platform.dll" exclude="" />
+    <file src="..\..\source\Platform\XLabs.Platform\bin\Debug\XLabs.Platform.pdb" target="lib\MonoAndroid60\XLabs.Platform.pdb" exclude="" />
+    <file src="..\..\source\Platform\XLabs.Platform\bin\Debug\XLabs.Platform.pdb" target="lib\xamarinios10\XLabs.Platform.pdb" exclude="" />
+    <file src="..\..\source\Platform\XLabs.Platform\bin\Debug\XLabs.Platform.pdb" target="lib\.NETCore50\XLabs.Platform.pdb" exclude="" />
+    <file src="..\..\source\Platform\XLabs.Platform\bin\Debug\XLabs.Platform.pdb" target="lib\wpa81\XLabs.Platform.pdb" exclude="" />
+    <file src="..\..\source\Platform\XLabs.Platform\bin\Debug\XLabs.Platform.pdb" target="lib\win81\XLabs.Platform.pdb" exclude="" />
+    <file src="..\..\source\Platform\XLabs.Platform\bin\Debug\XLabs.Platform.pdb" target="lib\portable-net45+win+wpa81+MonoAndroid10+xamarinios10+MonoTouch10\XLabs.Platform.pdb" exclude="" />
+    <file src="..\..\source\Platform\XLabs.Platform.Droid\bin\Debug\XLabs.Platform.Droid.dll" target="lib\MonoAndroid60\XLabs.Platform.Droid.dll" exclude="" />
+    <file src="..\..\source\Platform\XLabs.Platform.Droid\bin\Debug\XLabs.Platform.Droid.pdb" target="lib\MonoAndroid60\XLabs.Platform.Droid.pdb" exclude="" />
+    <file src="..\..\source\Platform\XLabs.Platform.iOS\bin\Debug\XLabs.Platform.iOS.dll" target="lib\xamarinios10\XLabs.Platform.iOS.dll" exclude="" />
+    <file src="..\..\source\Platform\XLabs.Platform.iOS\bin\Debug\XLabs.Platform.iOS.pdb" target="lib\xamarinios10\XLabs.Platform.iOS.pdb" exclude="" />
+    <file src="C:\Program Files (x86)\Windows Kits\10\UnionMetadata\facade\Windows.winmd" target="lib\.NETCore50\Windows.winmd" exclude="" />
+    <file src="..\..\source\Platform\XLabs.Platform.UWP\bin\Debug\XLabs.Platform.UWP.dll" target="lib\.NETCore50\XLabs.Platform.UWP.dll" exclude="" />
+    <file src="..\..\source\Platform\XLabs.Platform.UWP\bin\Debug\XLabs.Platform.UWP.pdb" target="lib\.NETCore50\XLabs.Platform.UWP.pdb" exclude="" />
+    <file src="..\..\source\Platform\XLabs.Platform.WinRT.Phone\bin\Debug\XLabs.Platform.WinRT.Phone.dll" target="lib\wpa81\XLabs.Platform.WinRT.Phone.dll" exclude="" />
+    <file src="..\..\source\Platform\XLabs.Platform.WinRT.Phone\bin\Debug\XLabs.Platform.WinRT.Phone.pdb" target="lib\wpa81\XLabs.Platform.WinRT.Phone.pdb" exclude="" />
+    <file src="..\..\source\Platform\XLabs.Platform.WinRT\bin\Debug\XLabs.Platform.WinRT.dll" target="lib\win81\XLabs.Platform.WinRT.dll" exclude="" />
+    <file src="..\..\source\Platform\XLabs.Platform.WinRT\bin\Debug\XLabs.Platform.WinRT.pdb" target="lib\win81\XLabs.Platform.WinRT.pdb" exclude="" />
+    <file src="..\..\.nuget\source\MonoCode.Platform.Nuspec\MonoCode.Platform.Readme.md" target="" exclude="" />
+  </files>
+</package>

@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>MonoCode.IoC.TinyIOC</id>
+    <version>1.0.0-pre01</version>
+    <title>MonoCode - IoC - TinyIOC</title>
+    <authors>MonoCode Team</authors>
+    <owners>MonoCode Team</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>This package implements the IOC provider contracts via TinyIOC</description>
+    <summary>MonoCode is a open source project that aims to provide a powerfull and cross platform set of controls tailored to work with Xamarin Forms.</summary>
+    <copyright>Copyright Â© 2016 MonoCode Team</copyright>
+    <tags>Xamarin MonoCode IOC TinyIOC</tags>
+    <dependencies>
+      <group targetFramework="MonoAndroid60">
+        <dependency id="MonoCode.IoC" version="1.0.0-pre01" />
+      </group>
+      <group targetFramework="xamarinios10">
+        <dependency id="MonoCode.IoC" version="1.0.0-pre01" />
+      </group>
+      <group targetFramework="net45">
+        <dependency id="MonoCode.IoC" version="1.0.0-pre01" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="..\..\source\IOC\XLabs.IOC.TinyIOC.Droid\bin\Debug\XLabs.IOC.TinyIOC.Droid.dll" target="lib\MonoAndroid60\XLabs.IOC.TinyIOC.Droid.dll" exclude="" />
+    <file src="..\..\source\IOC\XLabs.IOC.TinyIOC.Droid\bin\Debug\XLabs.IOC.TinyIOC.Droid.pdb" target="lib\MonoAndroid60\XLabs.IOC.TinyIOC.Droid.pdb" exclude="" />
+    <file src="..\..\source\IOC\XLabs.IOC.TinyIOC.iOS\bin\Debug\XLabs.IOC.TinyIOC.iOS.dll" target="lib\xamarinios10\XLabs.IOC.TinyIOC.iOS.dll" exclude="" />
+    <file src="..\..\source\IOC\XLabs.IOC.TinyIOC.iOS\bin\Debug\XLabs.IOC.TinyIOC.iOS.pdb" target="lib\xamarinios10\XLabs.IOC.TinyIOC.iOS.pdb" exclude="" />
+    <file src="..\..\source\IOC\XLabs.IOC.TinyIOC.Net45\bin\Debug\XLabs.IOC.TinyIOC.Net45.dll" target="lib\net45\XLabs.IOC.TinyIOC.Net45.dll" exclude="" />
+    <file src="..\..\source\IOC\XLabs.IOC.TinyIOC.Net45\bin\Debug\XLabs.IOC.TinyIOC.Net45.pdb" target="lib\net45\XLabs.IOC.TinyIOC.Net45.pdb" exclude="" />
+    <file src="..\..\.nuget\source\MonoCode.IOC.TinyIOC.Nuspec\MonoCode.IOC.TinyIOC.Readme.md" target="" exclude="" />
+  </files>
+</package>

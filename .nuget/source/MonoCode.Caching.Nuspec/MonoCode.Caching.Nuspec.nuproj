@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|AnyCPU">
+      <Configuration>Debug</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|AnyCPU">
+      <Configuration>Release</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>82b9805f-2faa-4b35-8cb4-52ea3a77e432</ProjectGuid>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NuProjPath Condition=" '$(NuProjPath)' == '' ">$(SolutionDir)\..\.nuget\nuproj\tools</NuProjPath>
+  </PropertyGroup>
+  <Import Project="$(NuProjPath)\NuProj.props" Condition="Exists('$(NuProjPath)\NuProj.props')" />
+  <PropertyGroup Label="Configuration">
+    <Id>MonoCode.Caching</Id>
+    <Version>0.0.0000</Version>
+    <Title>MonoCode - Caching</Title>
+    <Authors>MonoCode Team</Authors>
+    <Owners>MonoCode Team</Owners>
+    <Summary>MonoCode is a open source project that aims to provide a powerfull and cross platform set of controls tailored to work with Xamarin Forms.</Summary>
+    <Description>This package implements the core caching provider contracts</Description>
+    
+    
+    
+    <Copyright>Copyright © 2016 MonoCode Team</Copyright>
+    <Tags>Xamarin MonoCode caching</Tags>
+    
+    <OutputPath>$(SolutionDir)..\artifacts\Packages</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="MonoCode.Caching.Readme.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\source\Caching\XLabs.Caching\XLabs.Caching.csproj" />
+    <ProjectReference Include="..\MonoCode.Serialization.NuSpec\MonoCode.Serialization.NuSpec.nuproj" />
+  </ItemGroup>
+  <Import Project="$(NuProjPath)\NuProj.targets" />
+</Project>

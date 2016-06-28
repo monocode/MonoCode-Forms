@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>MonoCode.Serialization.JSON</id>
+    <version>1.0.0-pre01</version>
+    <title>MonoCode - Serialization - JSON</title>
+    <authors>MonoCode Team</authors>
+    <owners>MonoCode Team</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>This package implements the Serialization provider contracts via Json.NET</description>
+    <summary>MonoCode is a open source project that aims to provide a powerfull and cross platform set of controls tailored to work with Xamarin Forms.</summary>
+    <copyright>Copyright Â© 2016 MonoCode Team</copyright>
+    <tags>Xamarin MonoCode Serialization json json.net</tags>
+    <dependencies>
+      <group targetFramework="portable-net45+win+wpa81+MonoAndroid10+xamarinios10+MonoTouch10">
+        <dependency id="MonoCode.Serialization" version="1.0.0-pre01" />
+      </group>
+      <group targetFramework="portable-net45+win80+wpa81">
+        <dependency id="Newtonsoft.Json" version="8.0.3" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="..\..\source\Serialization\XLabs.Serialization.Json.NET\bin\Debug\XLabs.Serialization.Json.NET.dll" target="lib\portable-net45+win+wpa81+MonoAndroid10+xamarinios10+MonoTouch10\XLabs.Serialization.Json.NET.dll" exclude="" />
+    <file src="..\..\source\Serialization\XLabs.Serialization.Json.NET\bin\Debug\XLabs.Serialization.Json.NET.pdb" target="lib\portable-net45+win+wpa81+MonoAndroid10+xamarinios10+MonoTouch10\XLabs.Serialization.Json.NET.pdb" exclude="" />
+    <file src="..\..\.nuget\source\MonoCode.Serialization.JsonNET.Nuspec\MonoCode.Serialization.JsonNET.Readme.md" target="" exclude="" />
+  </files>
+</package>

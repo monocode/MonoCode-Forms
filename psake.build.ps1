@@ -46,7 +46,7 @@ $properties = @{
     "autoIncrementVersion" = $autoIncrementVersion;
 
     # Path to the solution file
-    "solution"      = 'XLabs.sln';
+    "solution"      = 'MonoCode.sln';
 	
     # Base namespeace for the package (used for updating nuspec details)
     "baseNamespace" = 'XLabs';
@@ -55,7 +55,7 @@ $properties = @{
     "source_folder" = '.\source';
 	
     # Folder container unit tests
-    "test_folder" = '.\tests';
+    "test_folder" =  $null; #'.\tests';
 
     # Folder to output deployable packages to. This folder should be ignored
     # from any source control, as we dont commit build artifacts to source
@@ -73,7 +73,7 @@ $properties = @{
     );
 	
     # Unit Test Framework (nunit, xunit)
-    "unittest_framework" = 'nunit';
+    "unittest_framework" = $null; #'nunit';
 	
     # Update the version numbers automatically
     "updateVersion" = $updateVersion;
@@ -86,7 +86,7 @@ $properties = @{
     "macAgentServerAddress" = $null; 
 	
     # The user name to use to authentice for the Xamarin build agent
-    "macAgentUser" = $null; #'Shawn Anderson'
+    "macAgentUser" = $null; 
 
     # URL of Nuget Server to push packages to	
     "nugetServerUrl" = 'https://nuget.org';
@@ -98,7 +98,7 @@ $properties = @{
 #if (!(Get-Module -Name psake -ListAvailable)) { Install-Module -Name psake -Scope CurrentUser }
 
 #import-module .\packages\psake.4.4.2\tools\psake.psm1
-import-module C:\ProgramData\chocolatey\lib\psake\tools\psake.psm1
+#import-module C:\ProgramData\chocolatey\lib\psake\tools\psake.psm1
 
 invoke-psake $build_file $task_list -Properties $properties -Framework "4.6"
 

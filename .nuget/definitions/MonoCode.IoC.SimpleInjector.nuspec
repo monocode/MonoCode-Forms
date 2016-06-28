@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>MonoCode.IoC.SimpleInjector</id>
+    <version>1.0.0-pre01</version>
+    <title>MonoCode - IoC - SimpleInjector</title>
+    <authors>MonoCode Team</authors>
+    <owners>MonoCode Team</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>This package implements the IOC provider contracts via SimpleInjector</description>
+    <summary>MonoCode is a open source project that aims to provide a powerfull and cross platform set of controls tailored to work with Xamarin Forms.</summary>
+    <copyright>Copyright Â© 2016 MonoCode Team</copyright>
+    <tags>Xamarin MonoCode IOC SimpleInjector</tags>
+    <dependencies>
+      <group targetFramework="portable-net45+win+wpa81+MonoAndroid10+xamarinios10+MonoTouch10">
+        <dependency id="MonoCode.IoC" version="1.0.0-pre01" />
+      </group>
+      <group targetFramework="portable-net45+win80+wpa81">
+        <dependency id="SimpleInjector" version="3.1.4" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="..\..\source\IOC\XLabs.IOC.SimpleInjector\bin\Debug\XLabs.IOC.SimpleInjector.dll" target="lib\portable-net45+win+wpa81+MonoAndroid10+xamarinios10+MonoTouch10\XLabs.IOC.SimpleInjector.dll" exclude="" />
+    <file src="..\..\source\IOC\XLabs.IOC.SimpleInjector\bin\Debug\XLabs.IOC.SimpleInjector.pdb" target="lib\portable-net45+win+wpa81+MonoAndroid10+xamarinios10+MonoTouch10\XLabs.IOC.SimpleInjector.pdb" exclude="" />
+    <file src="..\..\.nuget\source\MonoCode.IOC.SimpleInjector.Nuspec\MonoCode.IOC.SimpleInjector.Readme.md" target="" exclude="" />
+  </files>
+</package>

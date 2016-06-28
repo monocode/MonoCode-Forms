@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|AnyCPU">
+      <Configuration>Debug</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|AnyCPU">
+      <Configuration>Release</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>1b5ca7be-8e9c-4d21-83d9-2968b74428dc</ProjectGuid>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NuProjPath Condition=" '$(NuProjPath)' == '' ">$(SolutionDir)\..\.nuget\nuproj\tools</NuProjPath>
+  </PropertyGroup>
+  <Import Project="$(NuProjPath)\NuProj.props" Condition="Exists('$(NuProjPath)\NuProj.props')" />
+  <PropertyGroup Label="Configuration">
+    <Id>MonoCode.IoC.SimpleInjector</Id>
+    <Version>0.0.0000</Version>
+    <Title>MonoCode - IoC - SimpleInjector</Title>
+    <Authors>MonoCode Team</Authors>
+    <Owners>MonoCode Team</Owners>
+    <Summary>MonoCode is a open source project that aims to provide a powerfull and cross platform set of controls tailored to work with Xamarin Forms.</Summary>
+    <Description>This package implements the IOC provider contracts via SimpleInjector</Description>
+    
+    
+    
+    <Copyright>Copyright © 2016 MonoCode Team</Copyright>
+    <Tags>Xamarin MonoCode IOC SimpleInjector</Tags>
+    
+    <OutputPath>$(SolutionDir)..\artifacts\Packages</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="MonoCode.IOC.SimpleInjector.Readme.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\source\IOC\XLabs.IOC.SimpleInjector\XLabs.IOC.SimpleInjector.csproj" />
+    <ProjectReference Include="..\MonoCode.IOC.NuSpec\MonoCode.IOC.NuSpec.nuproj" />
+  </ItemGroup>
+  <Import Project="$(NuProjPath)\NuProj.targets" />
+</Project>
