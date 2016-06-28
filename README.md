@@ -6,7 +6,7 @@ This project originaly forked from [XLabs-Forms-Labs](https://github.com/XLabs/X
 
 XLabs Users
 -----------
-Don't be afraid to use MonoCode-Forms it is same with XLabs's current repository. But, We are trying to solve issues fast as we can. We didn't change the Namepaces yet thats mean you can use MonoCode-Forms with zero-change! Just remove XLabs.Forms packages in your projects and install MonoCode.Forms packages.
+Don't be afraid to use MonoCode-Forms it is same with XLabs's current repository. But, We are trying to solve issues as fast as we can. We didn't change the Namepaces yet thats mean you can use MonoCode-Forms with zero-change! Just remove XLabs.Forms packages from your projects and install MonoCode.Forms packages.
 
 If there is any urgent issue about XLabs or MonoCode please [open an issue](https://github.com/monocode/MonoCode-Forms/issues/new). We will try to fix it asap!
 
