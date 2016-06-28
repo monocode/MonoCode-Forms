@@ -14,7 +14,7 @@ We are building a new documentation and It will include every control in MonoCod
 
 Blog Posts
 ----------
-Our developers publishing articles about Xamarin on [http://xamaring.com](http://xamaring.com).
+[http://xamaring.com](http://xamaring.com) - [@monolara](https://github.com/monolara)
 
 Contributors of XLabs
 ---------------------
