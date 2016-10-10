@@ -3,9 +3,12 @@
   "dependencies": {
     "Microsoft.NETCore.Portable.Compatibility": "1.0.1",
     "NETStandard.Library": "1.6.0",
-    "NuSpec.ReferenceGenerator": "2.0.0-beta-bld14"
+    "NuSpec.ReferenceGenerator": "2.0.0-beta-bld14",
+    "Unity": "4.0.1"
   },
   "frameworks": {
-    "netstandard1.1": {}
+    "netstandard1.1": {
+      "imports": "portable-net45+win8+wpa81"
+    }
   }
 }

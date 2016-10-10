@@ -4,14 +4,12 @@
     "Microsoft.NETCore.Portable.Compatibility": "1.0.1",
     "NETStandard.Library": "1.6.0",
     "NuSpec.ReferenceGenerator": "2.0.0-beta-bld14",
-    "System.ComponentModel": "4.0.1",
-    "System.Diagnostics.Contracts": "4.0.1",
-    "System.Runtime.Serialization.Primitives": "4.1.1",
-    "Xamarin.Forms": "2.3.2.127"
+    "SQLite.Net.Async-PCL": "3.1.1",
+    "SQLite.Net.Core-PCL": "3.1.1"
   },
   "frameworks": {
     "netstandard1.1": {
-      "imports": "portable-win+net45+wp8+win81+wpa8"
+      "imports": "portable-net45+win8+wpa81"
     }
   }
 }
