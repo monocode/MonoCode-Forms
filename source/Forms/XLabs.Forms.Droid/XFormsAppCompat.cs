@@ -13,18 +13,18 @@ namespace XLabs.Forms
     /// <summary>
     /// Class XFormsAppDroid.
     /// </summary>
-    public class XFormsAppDroid : XFormsApp<XFormsApplicationDroid>
+    public class XFormsAppCompatDroid : XFormsApp<XFormsAppCompatApplicationDroid>
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="XFormsAppDroid"/> class.
+        /// Initializes a new instance of the <see cref="XFormsAppCompatDroid"/> class.
         /// </summary>
-        public XFormsAppDroid() { }
+        public XFormsAppCompatDroid() { }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="XFormsAppDroid"/> class.
+        /// Initializes a new instance of the <see cref="XFormsAppCompatDroid"/> class.
         /// </summary>
         /// <param name="app">The application.</param>
-        public XFormsAppDroid(XFormsApplicationDroid app) : base(app) { }
+        public XFormsAppCompatDroid(XFormsAppCompatApplicationDroid app) : base(app) { }
 
         /// <summary>
         /// Raises the back press.
@@ -39,7 +39,7 @@ namespace XLabs.Forms
         /// </summary>
         /// <param name="app">The application.</param>
         /// <param name="initServices">Should initialize services.</param>
-        protected override void OnInit(XFormsApplicationDroid app, bool initServices = true)
+        protected override void OnInit(XFormsAppCompatApplicationDroid app, bool initServices = true)
         {
             this.AppContext.Start += (o, e) => this.OnStartup();
             this.AppContext.Stop += (o, e) => this.OnClosing();

@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>MonoCode.Core</id>
-    <version>1.0.0-pre01</version>
+    <version>1.0.0-pre05</version>
     <title>MonoCode - Core</title>
     <authors>MonoCode Team</authors>
     <owners>MonoCode Team</owners>

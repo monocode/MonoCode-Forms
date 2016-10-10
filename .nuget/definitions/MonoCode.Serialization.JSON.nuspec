@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
   <metadata>
     <id>MonoCode.Serialization.JSON</id>
-    <version>1.0.0-pre01</version>
+    <version>1.0.0-pre05</version>
     <title>MonoCode - Serialization - JSON</title>
     <authors>MonoCode Team</authors>
     <owners>MonoCode Team</owners>
@@ -13,10 +13,10 @@
     <tags>Xamarin MonoCode Serialization json json.net</tags>
     <dependencies>
       <group targetFramework="portable-net45+win+wpa81+MonoAndroid10+xamarinios10+MonoTouch10">
-        <dependency id="MonoCode.Serialization" version="1.0.0-pre01" />
+        <dependency id="MonoCode.Serialization" version="1.0.0-pre05" />
       </group>
       <group targetFramework="portable-net45+win80+wpa81">
-        <dependency id="Newtonsoft.Json" version="8.0.3" />
+        <dependency id="Newtonsoft.Json" version="9.0.1" />
       </group>
     </dependencies>
   </metadata>

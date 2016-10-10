@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
   <metadata>
     <id>MonoCode.Serialization.ServiceStack</id>
-    <version>1.0.0-pre01</version>
+    <version>1.0.0-pre05</version>
     <title>MonoCode - Serialization - ServiceStack</title>
     <authors>MonoCode Team</authors>
     <owners>MonoCode Team</owners>
@@ -12,29 +12,29 @@
     <copyright>Copyright Â© 2016 XLabs Team</copyright>
     <tags>Xamarin MonoCode Serialization ServiceStack</tags>
     <dependencies>
-      <group targetFramework="MonoAndroid60">
-        <dependency id="MonoCode.Serialization" version="1.0.0-pre01" />
+      <group targetFramework="MonoAndroid70">
+        <dependency id="MonoCode.Serialization" version="1.0.0-pre05" />
       </group>
       <group targetFramework="xamarinios10">
-        <dependency id="MonoCode.Serialization" version="1.0.0-pre01" />
+        <dependency id="MonoCode.Serialization" version="1.0.0-pre05" />
       </group>
       <group targetFramework=".NETCore50">
-        <dependency id="MonoCode.Serialization" version="1.0.0-pre01" />
+        <dependency id="MonoCode.Serialization" version="1.0.0-pre05" />
       </group>
       <group targetFramework="wpa81">
-        <dependency id="MonoCode.Serialization" version="1.0.0-pre01" />
+        <dependency id="MonoCode.Serialization" version="1.0.0-pre05" />
       </group>
       <group targetFramework="win81">
-        <dependency id="MonoCode.Serialization" version="1.0.0-pre01" />
+        <dependency id="MonoCode.Serialization" version="1.0.0-pre05" />
       </group>
       <group targetFramework="portable-net45+win+wpa81+MonoAndroid10+xamarinios10+MonoTouch10">
-        <dependency id="MonoCode.Serialization" version="1.0.0-pre01" />
+        <dependency id="MonoCode.Serialization" version="1.0.0-pre05" />
       </group>
     </dependencies>
   </metadata>
   <files>
-    <file src="..\..\source\Serialization\XLabs.Serialization.ServiceStack.Droid\bin\Debug\XLabs.Serialization.ServiceStackV3.Droid.dll" target="lib\MonoAndroid60\XLabs.Serialization.ServiceStackV3.Droid.dll" exclude="" />
-    <file src="..\..\source\Serialization\XLabs.Serialization.ServiceStack.Droid\bin\Debug\XLabs.Serialization.ServiceStackV3.Droid.pdb" target="lib\MonoAndroid60\XLabs.Serialization.ServiceStackV3.Droid.pdb" exclude="" />
+    <file src="..\..\source\Serialization\XLabs.Serialization.ServiceStack.Droid\bin\Debug\XLabs.Serialization.ServiceStackV3.Droid.dll" target="lib\MonoAndroid70\XLabs.Serialization.ServiceStackV3.Droid.dll" exclude="" />
+    <file src="..\..\source\Serialization\XLabs.Serialization.ServiceStack.Droid\bin\Debug\XLabs.Serialization.ServiceStackV3.Droid.pdb" target="lib\MonoAndroid70\XLabs.Serialization.ServiceStackV3.Droid.pdb" exclude="" />
     <file src="..\..\source\Serialization\XLabs.Serialization.ServiceStack.iOS\bin\Debug\XLabs.Serialization.ServiceStackV3.iOS.dll" target="lib\xamarinios10\XLabs.Serialization.ServiceStackV3.iOS.dll" exclude="" />
     <file src="..\..\source\Serialization\XLabs.Serialization.ServiceStack.iOS\bin\Debug\XLabs.Serialization.ServiceStackV3.iOS.pdb" target="lib\xamarinios10\XLabs.Serialization.ServiceStackV3.iOS.pdb" exclude="" />
     <file src="C:\Program Files (x86)\Windows Kits\10\UnionMetadata\facade\Windows.winmd" target="lib\.NETCore50\Windows.winmd" exclude="" />

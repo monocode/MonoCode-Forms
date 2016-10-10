@@ -31,27 +31,27 @@ namespace XLabs.Forms.Controls
     /// Features Add:
     /// DataBinding
     /// </summary>
-    public class ExtendedPicker:Picker
+    public class ExtendedPicker : Picker
     {
         /// <summary>
         /// Constructor
         /// </summary>
-        public ExtendedPicker ()
+        public ExtendedPicker()
         {
             base.SelectedIndexChanged += OnSelectedIndexChanged;
         }
         /// <summary>
         /// Identifies the <see cref="P:XLabs.Forms.Controls.ExtendedPicker.SelectedItem" /> property.
         /// </summary>
-        public static readonly BindableProperty SelectedItemProperty =    BindableProperty.Create("SelectedItem", typeof(object),     typeof(ExtendedPicker), null, BindingMode.OneWay, null, new BindableProperty.BindingPropertyChangedDelegate(ExtendedPicker.OnSelectedItemChanged), null, null, null);
+        public static readonly BindableProperty SelectedItemProperty = BindableProperty.Create("SelectedItem", typeof(object), typeof(ExtendedPicker), null, BindingMode.OneWay, null, new BindableProperty.BindingPropertyChangedDelegate(ExtendedPicker.OnSelectedItemChanged), null, null, null);
         /// <summary>
         /// Identifies the <see cref="P:XLabs.Forms.Controls.ExtendedPicker.ItemSource" /> property.
         /// </summary>
-        public static readonly BindableProperty ItemsSourceProperty =     BindableProperty.Create("ItemsSource", typeof(IEnumerable), typeof(ExtendedPicker), null, BindingMode.OneWay, null, new BindableProperty.BindingPropertyChangedDelegate(ExtendedPicker.OnItemsSourceChanged), null, null, null);
+        public static readonly BindableProperty ItemsSourceProperty = BindableProperty.Create("ItemsSource", typeof(IEnumerable), typeof(ExtendedPicker), null, BindingMode.OneWay, null, new BindableProperty.BindingPropertyChangedDelegate(ExtendedPicker.OnItemsSourceChanged), null, null, null);
         /// <summary>
         /// Identifies the <see cref="P:XLabs.Forms.Controls.ExtendedPicker.DisplayProperty" /> property.
         /// </summary>
-        public static readonly BindableProperty DisplayPropertyProperty = BindableProperty.Create("DisplayProperty", typeof(string),  typeof(ExtendedPicker), null, BindingMode.OneWay, null, new BindableProperty.BindingPropertyChangedDelegate(ExtendedPicker.OnDisplayPropertyChanged), null, null, null);
+        public static readonly BindableProperty DisplayPropertyProperty = BindableProperty.Create("DisplayProperty", typeof(string), typeof(ExtendedPicker), null, BindingMode.OneWay, null, new BindableProperty.BindingPropertyChangedDelegate(ExtendedPicker.OnDisplayPropertyChanged), null, null, null);
         /// <summary>
         /// Identifies the <see cref="P:XLabs.Forms.Controls.ExtendedPicker.KeyMemberPath" /> property.
         /// </summary>
@@ -124,34 +124,16 @@ namespace XLabs.Forms.Controls
             }
         }
 
-        private void OnSelectedIndexChanged(object sender,EventArgs e)
+        private void OnSelectedIndexChanged(object sender, EventArgs e)
         {
-            this.SelectedItem = ItemsSource [SelectedIndex];
+            this.SelectedItem = ItemsSource[SelectedIndex];
         }
 
 
         private static void OnSelectedItemChanged(BindableObject bindable, object oldValue, object newValue)
         {
-            ExtendedPicker bindablePicker = (ExtendedPicker) bindable;
-            ExtendedPicker picker = bindable as ExtendedPicker;
-            if (picker != null)
-            {
-                var selectedItem = picker.ItemsSource[picker.SelectedIndex];
-                if (!string.IsNullOrWhiteSpace(picker.KeyMemberPath))
-                {
-                    var keyProperty = selectedItem.GetType().GetRuntimeProperty(picker.KeyMemberPath);
-                    if (keyProperty == null)
-                    {
-                        throw new InvalidOperationException(String.Concat(picker.KeyMemberPath, " is not a property of ",
-                            selectedItem.GetType().FullName));
-                    }
-                    picker.SelectedItem = keyProperty.GetValue(selectedItem);
-                }
-                else
-                {
-                    picker.SelectedItem = selectedItem;
-                }
-            }
+            ExtendedPicker bindablePicker = (ExtendedPicker)bindable;
+            bindablePicker.SelectedItem = newValue;
             if (bindablePicker.ItemsSource != null && bindablePicker.SelectedItem != null)
             {
                 int count = 0;
@@ -172,8 +154,7 @@ namespace XLabs.Forms.Controls
 
             ExtendedPicker bindablePicker = (ExtendedPicker)bindable;
             bindablePicker.DisplayProperty = (string)newValue;
-            loadItemsAndSetSelected (bindable);
-
+            loadItemsAndSetSelected(bindable);
         }
 
         private static void OnKeyMemberPathChanged(BindableObject bindable, object oldValue, object newValue)
@@ -186,30 +167,37 @@ namespace XLabs.Forms.Controls
         {
             ExtendedPicker bindablePicker = (ExtendedPicker)bindable;
             bindablePicker.ItemsSource = (IList)newValue;
-            loadItemsAndSetSelected (bindable);
+            loadItemsAndSetSelected(bindable);
         }
-        static void loadItemsAndSetSelected (BindableObject bindable)
+        static void loadItemsAndSetSelected(BindableObject bindable)
         {
             ExtendedPicker bindablePicker = (ExtendedPicker)bindable;
-            if (bindablePicker.ItemsSource as IEnumerable != null) {
+            if (bindablePicker.ItemsSource as IEnumerable != null)
+            {
                 PropertyInfo propertyInfo = null;
                 int count = 0;
-                foreach (object obj in (IEnumerable)bindablePicker.ItemsSource) {
+                foreach (object obj in (IEnumerable)bindablePicker.ItemsSource)
+                {
                     string value = string.Empty;
-                    if (bindablePicker.DisplayProperty != null) {
-                        if (propertyInfo == null) {
-                            propertyInfo = obj.GetType ().GetRuntimeProperty (bindablePicker.DisplayProperty);
+                    if (bindablePicker.DisplayProperty != null)
+                    {
+                        if (propertyInfo == null)
+                        {
+                            propertyInfo = obj.GetType().GetRuntimeProperty(bindablePicker.DisplayProperty);
                             if (propertyInfo == null)
-                                throw new Exception (String.Concat (bindablePicker.DisplayProperty, " is not a property of ", obj.GetType ().FullName));
+                                throw new Exception(String.Concat(bindablePicker.DisplayProperty, " is not a property of ", obj.GetType().FullName));
                         }
-                        value = propertyInfo.GetValue (obj).ToString();
+                        value = propertyInfo.GetValue(obj).ToString();
                     }
-                    else {
+                    else
+                    {
                         value = obj.ToString();
                     }
-                    bindablePicker.Items.Add (value);
-                    if (bindablePicker.SelectedItem != null) {
-                        if (bindablePicker.SelectedItem == obj) {
+                    bindablePicker.Items.Add(value);
+                    if (bindablePicker.SelectedItem != null)
+                    {
+                        if (bindablePicker.SelectedItem == obj)
+                        {
                             bindablePicker.SelectedIndex = count;
                         }
                     }

@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
   <metadata>
     <id>MonoCode.Forms.Charting</id>
-    <version>1.0.0-pre01</version>
+    <version>1.0.0-pre05</version>
     <title>MonoCode - Forms - Charting</title>
     <authors>MonoCode Team</authors>
     <owners>MonoCode Team</owners>
@@ -12,8 +12,30 @@
     <copyright>Copyright Â© 2016 MonoCode Team</copyright>
     <tags>Xamarin MonoCode Forms Charting</tags>
     <dependencies>
+      <group targetFramework="MonoAndroid70">
+        <dependency id="MonoCode.Forms" version="1.0.0-pre05" />
+        <dependency id="Xamarin.Forms" version="2.3.2.127" />
+      </group>
+      <group targetFramework="xamarinios10">
+        <dependency id="MonoCode.Forms" version="1.0.0-pre05" />
+        <dependency id="Xamarin.Forms" version="2.3.2.127" />
+      </group>
+      <group targetFramework=".NETCore50">
+        <dependency id="MonoCode.Forms" version="1.0.0-pre05" />
+      </group>
+      <group targetFramework="wpa81">
+        <dependency id="MonoCode.Forms" version="1.0.0-pre05" />
+        <dependency id="WPtoolkit" version="4.2013.08.16" />
+        <dependency id="Xamarin.Forms" version="2.3.2.127" />
+      </group>
+      <group targetFramework="win81">
+        <dependency id="MonoCode.Forms" version="1.0.0-pre05" />
+        <dependency id="Xamarin.Forms" version="2.3.2.127" />
+      </group>
+      <group targetFramework="portable-net45+win+wpa81+MonoAndroid10+xamarinios10+MonoTouch10">
+        <dependency id="MonoCode.Forms" version="1.0.0-pre05" />
+      </group>
       <group targetFramework="MonoAndroid60">
-        <dependency id="MonoCode.Forms" version="1.0.0-pre01" />
         <dependency id="Xamarin.Android.Support.Animated.Vector.Drawable" version="23.3.0" />
         <dependency id="Xamarin.Android.Support.Design" version="23.3.0" />
         <dependency id="Xamarin.Android.Support.v4" version="23.3.0" />
@@ -22,47 +44,27 @@
         <dependency id="Xamarin.Android.Support.v7.MediaRouter" version="23.3.0" />
         <dependency id="Xamarin.Android.Support.v7.RecyclerView" version="23.3.0" />
         <dependency id="Xamarin.Android.Support.Vector.Drawable" version="23.3.0" />
-        <dependency id="Xamarin.Forms" version="2.2.0.45" />
-      </group>
-      <group targetFramework="xamarinios10">
-        <dependency id="MonoCode.Forms" version="1.0.0-pre01" />
-        <dependency id="Xamarin.Forms" version="2.2.0.45" />
-      </group>
-      <group targetFramework=".NETCore50">
-        <dependency id="MonoCode.Forms" version="1.0.0-pre01" />
-      </group>
-      <group targetFramework="wpa81">
-        <dependency id="MonoCode.Forms" version="1.0.0-pre01" />
-        <dependency id="WPtoolkit" version="4.2013.08.16" />
-        <dependency id="Xamarin.Forms" version="2.2.0.45" />
-      </group>
-      <group targetFramework="win81">
-        <dependency id="MonoCode.Forms" version="1.0.0-pre01" />
-        <dependency id="Xamarin.Forms" version="2.2.0.45" />
-      </group>
-      <group targetFramework="portable-net45+win+wpa81+MonoAndroid10+xamarinios10+MonoTouch10">
-        <dependency id="MonoCode.Forms" version="1.0.0-pre01" />
       </group>
       <group targetFramework="portable-net45+win80+wpa81">
-        <dependency id="Xamarin.Forms" version="2.2.0.45" />
+        <dependency id="Xamarin.Forms" version="2.3.2.127" />
       </group>
     </dependencies>
   </metadata>
   <files>
-    <file src="..\..\source\Charting\XLabs.Forms.Charting\bin\Debug\XLabs.Forms.Charting.dll" target="lib\MonoAndroid60\XLabs.Forms.Charting.dll" exclude="" />
+    <file src="..\..\source\Charting\XLabs.Forms.Charting\bin\Debug\XLabs.Forms.Charting.dll" target="lib\MonoAndroid70\XLabs.Forms.Charting.dll" exclude="" />
     <file src="..\..\source\Charting\XLabs.Forms.Charting\bin\Debug\XLabs.Forms.Charting.dll" target="lib\xamarinios10\XLabs.Forms.Charting.dll" exclude="" />
     <file src="..\..\source\Charting\XLabs.Forms.Charting\bin\Debug\XLabs.Forms.Charting.dll" target="lib\.NETCore50\XLabs.Forms.Charting.dll" exclude="" />
     <file src="..\..\source\Charting\XLabs.Forms.Charting\bin\Debug\XLabs.Forms.Charting.dll" target="lib\wpa81\XLabs.Forms.Charting.dll" exclude="" />
     <file src="..\..\source\Charting\XLabs.Forms.Charting\bin\Debug\XLabs.Forms.Charting.dll" target="lib\win81\XLabs.Forms.Charting.dll" exclude="" />
     <file src="..\..\source\Charting\XLabs.Forms.Charting\bin\Debug\XLabs.Forms.Charting.dll" target="lib\portable-net45+win+wpa81+MonoAndroid10+xamarinios10+MonoTouch10\XLabs.Forms.Charting.dll" exclude="" />
-    <file src="..\..\source\Charting\XLabs.Forms.Charting\bin\Debug\XLabs.Forms.Charting.pdb" target="lib\MonoAndroid60\XLabs.Forms.Charting.pdb" exclude="" />
+    <file src="..\..\source\Charting\XLabs.Forms.Charting\bin\Debug\XLabs.Forms.Charting.pdb" target="lib\MonoAndroid70\XLabs.Forms.Charting.pdb" exclude="" />
     <file src="..\..\source\Charting\XLabs.Forms.Charting\bin\Debug\XLabs.Forms.Charting.pdb" target="lib\xamarinios10\XLabs.Forms.Charting.pdb" exclude="" />
     <file src="..\..\source\Charting\XLabs.Forms.Charting\bin\Debug\XLabs.Forms.Charting.pdb" target="lib\.NETCore50\XLabs.Forms.Charting.pdb" exclude="" />
     <file src="..\..\source\Charting\XLabs.Forms.Charting\bin\Debug\XLabs.Forms.Charting.pdb" target="lib\wpa81\XLabs.Forms.Charting.pdb" exclude="" />
     <file src="..\..\source\Charting\XLabs.Forms.Charting\bin\Debug\XLabs.Forms.Charting.pdb" target="lib\win81\XLabs.Forms.Charting.pdb" exclude="" />
     <file src="..\..\source\Charting\XLabs.Forms.Charting\bin\Debug\XLabs.Forms.Charting.pdb" target="lib\portable-net45+win+wpa81+MonoAndroid10+xamarinios10+MonoTouch10\XLabs.Forms.Charting.pdb" exclude="" />
-    <file src="..\..\source\Charting\XLabs.Forms.Charting.Droid\bin\Debug\XLabs.Forms.Charting.Droid.dll" target="lib\MonoAndroid60\XLabs.Forms.Charting.Droid.dll" exclude="" />
-    <file src="..\..\source\Charting\XLabs.Forms.Charting.Droid\bin\Debug\XLabs.Forms.Charting.Droid.pdb" target="lib\MonoAndroid60\XLabs.Forms.Charting.Droid.pdb" exclude="" />
+    <file src="..\..\source\Charting\XLabs.Forms.Charting.Droid\bin\Debug\XLabs.Forms.Charting.Droid.dll" target="lib\MonoAndroid70\XLabs.Forms.Charting.Droid.dll" exclude="" />
+    <file src="..\..\source\Charting\XLabs.Forms.Charting.Droid\bin\Debug\XLabs.Forms.Charting.Droid.pdb" target="lib\MonoAndroid70\XLabs.Forms.Charting.Droid.pdb" exclude="" />
     <file src="..\..\source\Charting\XLabs.Forms.Charting.iOS\bin\Debug\XLabs.Forms.Charting.iOS.dll" target="lib\xamarinios10\XLabs.Forms.Charting.iOS.dll" exclude="" />
     <file src="..\..\source\Charting\XLabs.Forms.Charting.iOS\bin\Debug\XLabs.Forms.Charting.iOS.pdb" target="lib\xamarinios10\XLabs.Forms.Charting.iOS.pdb" exclude="" />
     <file src="..\..\source\Charting\XLabs.Forms.Charting.UWP\bin\Debug\XLabs.Forms.Charting.UWP.dll" target="lib\.NETCore50\XLabs.Forms.Charting.UWP.dll" exclude="" />

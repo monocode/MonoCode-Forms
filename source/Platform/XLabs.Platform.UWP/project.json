@@ -1,9 +1,9 @@
 ﻿{
   "dependencies": {
     "Fody": "1.29.4",
-    "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0",
-    "NuSpec.ReferenceGenerator": "2.0.0-beta-bld01",
-    "PropertyChanged.Fody": "1.51.0",
+    "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.2",
+    "NuSpec.ReferenceGenerator": "2.0.0-beta-bld14",
+    "PropertyChanged.Fody": "1.52.0",
     "SharpDX.Direct2D1": "3.0.2"
   },
   "frameworks": {

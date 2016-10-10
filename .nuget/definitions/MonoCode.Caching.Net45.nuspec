@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
   <metadata>
     <id>MonoCode.Caching.Net45</id>
-    <version>1.0.0-pre01</version>
+    <version>1.0.0-pre05</version>
     <title>MonoCode - Caching - .NET 4.5</title>
     <authors>MonoCode Team</authors>
     <owners>MonoCode Team</owners>
@@ -13,8 +13,8 @@
     <tags>Xamarin MonoCode caching</tags>
     <dependencies>
       <group targetFramework="net45">
-        <dependency id="MonoCode.Serialization" version="1.0.0-pre01" />
-        <dependency id="MonoCode.Caching" version="1.0.0-pre01" />
+        <dependency id="MonoCode.Serialization" version="1.0.0-pre05" />
+        <dependency id="MonoCode.Caching" version="1.0.0-pre05" />
       </group>
     </dependencies>
   </metadata>

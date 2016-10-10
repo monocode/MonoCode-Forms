@@ -3,8 +3,8 @@
     "Microsoft.Bcl.Async": "1.0.168",
     "Microsoft.Bcl.Build": "1.0.21",
     "Microsoft.Net.Http": "2.2.29",
-    "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0",
-    "NuSpec.ReferenceGenerator": "2.0.0-beta-bld01"
+    "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.2",
+    "NuSpec.ReferenceGenerator": "2.0.0-beta-bld14"
   },
   "frameworks": {
     "uap10.0": {}

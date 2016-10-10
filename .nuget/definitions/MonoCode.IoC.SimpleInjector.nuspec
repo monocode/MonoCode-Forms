@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
   <metadata>
     <id>MonoCode.IoC.SimpleInjector</id>
-    <version>1.0.0-pre01</version>
+    <version>1.0.0-pre05</version>
     <title>MonoCode - IoC - SimpleInjector</title>
     <authors>MonoCode Team</authors>
     <owners>MonoCode Team</owners>
@@ -13,7 +13,7 @@
     <tags>Xamarin MonoCode IOC SimpleInjector</tags>
     <dependencies>
       <group targetFramework="portable-net45+win+wpa81+MonoAndroid10+xamarinios10+MonoTouch10">
-        <dependency id="MonoCode.IoC" version="1.0.0-pre01" />
+        <dependency id="MonoCode.IoC" version="1.0.0-pre05" />
       </group>
       <group targetFramework="portable-net45+win80+wpa81">
         <dependency id="SimpleInjector" version="3.1.4" />

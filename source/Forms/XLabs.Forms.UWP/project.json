@@ -1,8 +1,8 @@
 ﻿{
   "dependencies": {
-    "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0",
-    "NuSpec.ReferenceGenerator": "2.0.0-beta-bld01",
-    "Xamarin.Forms": "2.2.0.45"
+    "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.2",
+    "NuSpec.ReferenceGenerator": "2.0.0-beta-bld14",
+    "Xamarin.Forms": "2.3.2.127"
   },
   "frameworks": {
     "uap10.0": {}

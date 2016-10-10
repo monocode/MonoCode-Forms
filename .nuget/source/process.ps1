@@ -9,6 +9,9 @@ Param(
 	[string]$key = $null,
 	
 	[Parameter()]
+	[string]$source = "https://www.nuget.org/api/v2/package",
+	
+	[Parameter()]
 	[string]$publish = $false,
 
 	[string]$relativePath = "..\.."
@@ -25,7 +28,7 @@ Write-Host $rootPathResolved
 gci -Recurse *.nuspec | Where-Object { $_.PSIsContainer -eq $False -and $_.Name -match ".nuspec$" } | % {
 	$f = $_.FullName
 	$s = $_.Name
-	Write-Host "Procssing and Updating: $s";
+	Write-Host "Procssing and Updating: $s ($f)";
 	Copy-Item -Force $f $deploy_folder
 	
 	#Write-Host "Reading XML"
@@ -33,7 +36,7 @@ gci -Recurse *.nuspec | Where-Object { $_.PSIsContainer -eq $False -and $_.Name 
 	[xml]$xmlContent = Get-Content -Path $xf
 	
 	if ($version) {
-		Write-Host "`tUpdating Version to $version"
+		Write-Host "`tUpdating $xf Version to $version"
 		$xmlContent.package.metadata.version = "$version"
 		
 		foreach($x in $xmlContent.package.metadata.dependencies.group)
@@ -66,18 +69,17 @@ gci -Recurse *.nuspec | Where-Object { $_.PSIsContainer -eq $False -and $_.Name 
 	
 	$xmlContent.Save($xf)
 	
+	$nugetPath = "$($rootPathResolved)\.nuget\nuget.exe "
+	
+	Write-Host "`tConverting nuget package." -ForegroundColor Green
+	iex "$($nugetPath) pack $($xf) -OutputDirectory ..\deploy" 	
+	
 	if($publish -eq $true -and $key -ne $null)
 	{
-		$nugetPath = "$($rootPathResolved)\.nuget\nuget.exe "
-	
-		Write-Host "`tConverting nuget package." -ForegroundColor Green
-		$command = "$($nugetPath) pack $($xf) -OutputDirectory ..\deploy" 
-		iex $command	
-		
 		$nugetPackage = (Resolve-Path "..\deploy\$($xmlContent.package.metadata.id).$($xmlContent.package.metadata.version).nupkg")
 		#Write-Host $nugetPackage -ForegroundColor Cyan
 		Write-Host "`tUploading $($nugetPackage) to Nuget." -ForegroundColor Cyan
-		iex "$($nugetPath) push $($nugetPackage) -Source https://www.nuget.org/api/v2/package -ApiKey $($key)"
+		iex "$($nugetPath) push $($nugetPackage) -Source $source -ApiKey $($key)"
 	}
 }
 

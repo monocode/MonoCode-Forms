@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>MonoCode.Cryptography</id>
-    <version>1.0.0-pre01</version>
+    <version>1.0.0-pre05</version>
     <title>MonoCode - Cryptography</title>
     <authors>MonoCode Team</authors>
     <owners>MonoCode Team</owners>
